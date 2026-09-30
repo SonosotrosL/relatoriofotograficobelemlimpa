@@ -2,7 +2,7 @@
 
 Ferramenta web que monta o relatório fotográfico mensal das Bases Norte e Sul a partir das fotos do WhatsApp, no mesmo padrão visual do modelo da fiscalização.
 
-Tudo roda **no navegador de quem usa**: as fotos não são enviadas para nenhum servidor e a leitura dos carimbos é feita por um leitor de texto (OCR) local, sem custo.
+Tudo roda **no navegador de quem usa**: a leitura dos carimbos é feita por um leitor de texto (OCR) local, sem custo. As fotos só saem do navegador se você ligar, por conta própria, a sugestão de serviço pelo Gemini (opcional).
 
 ## Como usar
 
@@ -21,7 +21,7 @@ O site é o `index.html` mais as pastas `tess` e `hp`. Não precisa de build.
 2. Arraste **o `index.html`, as pastas `tess` e `hp` e o `vercel.json`** (o conteúdo desta pasta, não a pasta em si) → **Commit changes**.
 3. Confira na página do repositório: na raiz devem aparecer `index.html`, `vercel.json`, a pasta `tess` (5 arquivos) e a pasta `hp` (5 arquivos). Se aparecer uma pasta com outro nome contendo tudo, o upload ficou um nível abaixo; mova os arquivos para a raiz.
 4. Na Vercel: **Add New → Project** → importe o repositório → *Framework Preset*: **Other** → sem Build Command e sem Output Directory → **Deploy**.
-5. Abra o site e confira no rodapé a **versão** (data e hora). Se ela não for a nova, recarregue com Ctrl+Shift+R.
+5. Abra o site. Se ele ainda mostrar a versão antiga, recarregue com Ctrl+Shift+R (a data da versão fica no código da página: clique com o botão direito → Exibir código-fonte e procure por "versão").
 
 **Pelo terminal:**
 ```bash
